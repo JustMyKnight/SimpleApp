@@ -10,9 +10,18 @@
 
 @interface CollectionViewCell()
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
+
 @end
 
 @implementation CollectionViewCell
+
+- (void)viewDidLoad
+{
+    self.scrollview.minimumZoomScale=0.5;
+    self.scrollview.maximumZoomScale=6.0;
+    //self.scrollview.delegate=self;
+    
+}
 
 - (id)initWithFrame:(CGRect)frame
 {

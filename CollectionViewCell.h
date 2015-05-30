@@ -9,8 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface CollectionViewCell : UICollectionViewCell
-
+{
+IBOutlet UIScrollView *scrollview;
+}
 @property (nonatomic, strong) NSString *imageName;
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollview;
 
 -(void)updateCell;
 
